@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
 
-  <link rel="shortcut icon" type="image/x-icon" href="/img/me.jpg">
+  <link rel="shortcut icon" type="image/x-icon" href="https://vediodemo.oss-cn-hangzhou.aliyuncs.com/myblog/static/me.jpg?x-oss-process=style/rule1">
   <link href="https://lib.baomitu.com/amazeui/2.7.2/css/amazeui.min.css" rel="stylesheet">
   <link href="https://lib.baomitu.com/font-awesome/5.8.0/css/fontawesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/all.css">
@@ -32,6 +32,10 @@
                 'every idle 10s': '$hitokoto$',
                 // 当触摸到星星图案
                 'hover .star': '专心学习！！！ (*/ω＼*)',
+                // 当点击留言评论时
+                'hover .liuyan': '你有什么话想让我帮你转告他吗？',
+                'hover .pinglun': '写个评论吧！嘤嘤嘤',
+                'hover .gonggao': '我也不知道这公告啥意思(*/ω＼*)',
                 // 当触摸到角色身体
                 'tap body': '哎呀！别碰我！',
                 // 当触摸到角色头部
@@ -61,7 +65,7 @@
         <div class="am-dropdown-content">
           <div class="personal-card-show" style="text-align: center">
             <div class="personal-card-show-img">
-              <img src="/img/me.jpg">
+              <img src="https://vediodemo.oss-cn-hangzhou.aliyuncs.com/myblog/static/me.jpg?x-oss-process=style/rule1">
             </div>
             <div class="personal-card-show-name">
               <h4 style="font-weight: 500">麻衣三十五</h4>
@@ -100,11 +104,11 @@
                   <div class="rjw-qq-weixin">
                     <div class="rjw-qq-box">
                       <p>QQ</p>
-                      <img src="/img/qq.jpg"  class="qq_code am-img-thumbnail am-radius">
+                      <img src=""  class="qq_code am-img-thumbnail am-radius">
                     </div>
                     <div class="rjw-weixin-box">
                       <p>微信</p>
-                      <img src="img/weixin.jpeg"  class="weixin_code am-img-thumbnail am-radius">
+                      <img src=""  class="weixin_code am-img-thumbnail am-radius">
                     </div>
                   </div>
                 </div>
@@ -119,7 +123,7 @@
         <ul class="am-nav am-nav-pills am-topbar-nav">
           <li><a class="top_bar" href="/" style="cursor: pointer;"><span class="am-icon-home"></span>&nbsp;首页</a></li>
           <li><a class="top_bar" href="/categories" style="cursor: pointer;"><span class="am-icon-th"></span>&nbsp;学习总结</a></li>
-          <li><a class="top_bar" href="/update" style="cursor: pointer;"><span class="am-icon-calendar-plus-o"></span>&nbsp;读书笔记</a></li>
+          <li><a class="top_bar" href="/categories" style="cursor: pointer;"><span class="am-icon-calendar-plus-o"></span>&nbsp;读书笔记</a></li>
 
           <li><a class="top_bar" href="/archives" style="cursor: pointer;"><span class="am-icon-archive"></span>&nbsp;归档</a></li>
           <li><a class="top_bar" href="/tags" style="cursor: pointer;"><span class="am-icon-tags"></span>&nbsp;标签</a></li>
@@ -168,7 +172,7 @@
               <li>拿两根鸡腿的小埋好可爱！！！ (*/ω＼*)</li>
               <li>我还有很多很多头发qwq</li>
               <li>不想debug了呜呜呜</li>
-              <li>少年别在阳光下花洒汗水了</li>
+              <li>少年别在阳光下挥洒汗水了</li>
             </ul>
           </div>
         </div>
@@ -187,7 +191,7 @@
             <div class="am-g">
               <div class="am-u-sm-5">
                 <div class="img-title">
-                  <img class="img" src="/img/me.jpg">
+                  <img class="img" src="https://vediodemo.oss-cn-hangzhou.aliyuncs.com/myblog/static/me.jpg?x-oss-process=style/rule1">
                 </div>
               </div>
               <div class="am-u-sm-7" style="padding: 0 20px 0 0;">
@@ -204,7 +208,7 @@
               <span style="color: #009688">微信：ranjiwennju</span><br>
               <span style="color: #009688">QQ：1322926851</span><br>
               <div id="follow">
-                <button class="myCardBtn am-btn am-btn-secondary am-round attention_btn" data-am-offcanvas="{target: '#doc-oc-demo2', effect: 'push'}">我是不会加你好友的！</button>
+                <button class="myCardBtn am-btn am-btn-secondary am-round attention_btn star" data-am-offcanvas="{target: '#doc-oc-demo2', effect: 'push'}">我是不会加你好友的！</button>
               </div>
               <!--左侧栏-->
               <div id="doc-oc-demo2" class="am-offcanvas">
@@ -229,11 +233,11 @@
                     <div class="rjw-qq-weixin">
                       <div class="rjw-qq-box">
                         <p>QQ</p>
-                        <img src="/img/weixin.jpeg"  class="qq_code am-img-thumbnail am-radius">
+                        <img src=""  class="qq_code am-img-thumbnail am-radius">
                       </div>
                       <div class="rjw-weixin-box">
                         <p>微信</p>
-                        <img src="/img/qq.jpg"  class="weixin_code am-img-thumbnail am-radius">
+                        <img src=""  class="weixin_code am-img-thumbnail am-radius">
                       </div>
                     </div>
                   </div>
@@ -254,7 +258,7 @@
           </div>
 
           <!--评论消息-->
-          <div class="new-comment">
+          <div class="new-comment pinglun">
             <div data-am-widget="list_news" class="am-list-news am-list-news-default" >
               <div class="am-list-news-hd am-cf">
                 <a class="newComments">
@@ -285,7 +289,7 @@
           </div>
 
           <!--留言-->
-          <div class="new-leaveWord">
+          <div class="new-leaveWord liuyan">
             <div data-am-widget="list_news" class="am-list-news am-list-news-default" >
               <div class="am-list-news-hd am-cf">
                 <a class="newLeaveWord">
@@ -524,12 +528,12 @@
         <div id="right">
 
           <h3 class="widget-title">公告</h3>
-          <div class="widget">
+          <div class="widget gonggao">
             <div class="bg-danger">
               <div class="zhy-info">
                 <i class="am-icon-quote-left" style="float: left"></i><br>
                 <div class="zhy-info-day">
-                  <p>就像贪婪算法</p>
+                  <p>就像贪心算法</p>
                   <p>不一定能得到最优解</p>
                   <p>如果人生每一步选择</p>
                   <p>都是当前最优的</p>
@@ -553,9 +557,9 @@
           </div>
           <div class="myStory" >
             <div class="bg-myGirl">
-              <div><a class="bg-myGirl-a" href="/mylove" target="_blank">猫</a></div>
+              <div><a class="bg-myGirl-a" href="/" target="_blank">猫</a></div>
             </div>
-            <div class="myStory-words">我的女孩，你还在吗</div>
+            <div class="myStory-words">玳瑁，马冬梅</div>
           </div>
           <div class="tag-cloud">
             <h3 class="widget-title">标签云</h3>

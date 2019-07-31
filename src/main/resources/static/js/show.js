@@ -22,7 +22,7 @@
             '<i class="am-icon-folder"> <a class="articleCategoryColor" href="/categories?category=' + data.articleCategories + '">' + data.articleCategories + '</a></i>' +
             '</div>' +
             '</div></article-top><div class="article-i-say">' +
-            '多年以后，愿你的城市，有清风，有烈酒，也有人是你的归途。<span class="article-i-say-me">--- 张海洋</span>' +
+            '这不是一个 bug，这只是一个未列出来的特性。<span class="article-i-say-me">--- 共勉</span>' +
             '</div>');
         $('.zhy-article-top').append(articleTop);
         $("#mdText").text(data.articleContent);
@@ -41,9 +41,9 @@
             '<div class="show-weixin">' +
             '<p><i class="weiXinQuoteLeft am-icon-quote-left "></i></p><br>' +
             '<p class="show-weixin-pic">' +
-            '<img src="https://zhy-myblog.oss-cn-shenzhen.aliyuncs.com/static/img/weixin.jpg">' +
+            '<img src="https://vediodemo.oss-cn-hangzhou.aliyuncs.com/myblog/static/skm.jpg?x-oss-process=style/rule1">' +
             '</p>' +
-            '<p class="show-weixin-pic">欢迎关注我的微信公众号：zhyocean1314</p>' +
+            '<p class="show-weixin-pic">欢迎关注我的收款码</p>' +
             '<p><i class="weiXinQuoteRight am-icon-quote-right "></i></p>' +
             '</div>' +
             '<div>' +
@@ -105,7 +105,7 @@
             $('.likeHeart').find('i').removeClass("am-icon-heart-o");
             $('.likeHeart').find('i').addClass("am-icon-heart");
         }
-        $('.other').append($('<div class="social-share" data-initialized="true" data-url="https://www.zhyocean.cn/article/' + data.articleId  + '"  data-title="' + data.articleTitle + '">' +
+        $('.other').append($('<div class="social-share" data-initialized="true" data-url="https://www.tjmqxq.xyz/article/' + data.articleId  + '"  data-title="' + data.articleTitle + '">' +
             '<a href="#" class="social-share-icon icon-qq" data-am-popover="{content: \'分享至QQ好友\', trigger: \'hover focus\'}"></a>' +
             '<a href="#" class="social-share-icon icon-qzone" data-am-popover="{content: \'分享至QQ空间\', trigger: \'hover focus\'}"></a>' +
             '<a href="#" class="social-share-icon icon-wechat"></a>' +

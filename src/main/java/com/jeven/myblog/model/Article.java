@@ -3,12 +3,16 @@ package com.jeven.myblog.model;
 import lombok.Data;
 
 /**
- * Created by jeven on 2019/5/27.
+ * @author: jeven
+ * @Date: 2019/5/28 11:52
+ * Describe: 文章
  */
 @Data
 public class Article {
 
     private static final long serialVersionUID = 1L;
+
+    private int id;
 
     /**
      * 文章id
@@ -87,4 +91,5 @@ public class Article {
      * 喜欢
      */
     private int likes = 0;
+
 }

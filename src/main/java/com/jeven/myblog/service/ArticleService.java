@@ -8,9 +8,12 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Map;
 
 /**
- * Created by jeven on 2019/5/29.
+ * @author: zhangocean
+ * @Date: 2018/6/20 21:41
+ * Describe: 文章业务操作
  */
 public interface ArticleService {
+
     /**
      * 保存文章
      * @param article 文章
@@ -62,12 +65,14 @@ public interface ArticleService {
      * @return 目前点赞数
      */
     int updateLikeByArticleId(long articleId);
+
     /**
      * 通过标签分页获得文章部分信息
      * @param tag
      * @return
      */
     JSONObject findArticleByTag(String tag, int rows, int pageNum);
+
     /**
      * 分页获得该分类下的所有文章
      * @param category 分类名
@@ -85,6 +90,7 @@ public interface ArticleService {
      * @return
      */
     JSONObject findArticleByArchive(String archive, int rows, int pageNum);
+
     /**
      * 获得草稿中的文章
      * @return
@@ -128,4 +134,5 @@ public interface ArticleService {
      */
     @Transactional
     int deleteArticle(long id);
+
 }
